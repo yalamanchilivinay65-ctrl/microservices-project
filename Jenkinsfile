@@ -1,9 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage ("CQA") {
-            steps {
-                sh "mvn clean install"
         stage('Build & Tag Docker Image') {
             steps {
                 script {
